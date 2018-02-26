@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{4588189B-C479-47C0-9527-8B009CD1648F}|Default">
+  <MonoDevelop.Ide.ItemProperties.UserBook.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.24FA16EE-C03E-4C20-A105-ADD76C26380D" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UserBook/Views/HomePage.xaml">
+    <Files>
+      <File FileName="UserBook/Views/UserDetails.xaml" Line="65" Column="27" />
+      <File FileName="UserBookServices/UserModel/UserModel.cs" Line="64" Column="32" />
+      <File FileName="UserBook/Views/HomePage.xaml" Line="70" Column="1" />
+      <File FileName="UserBook/Views/UserDetails.xaml.cs" Line="15" Column="31" />
+      <File FileName="UserBook/Views/HomePage.xaml.cs" Line="36" Column="47" />
+      <File FileName="UserBook/Views/App.xaml.cs" Line="10" Column="4" />
+      <File FileName="UserBook/obj/Debug/UserBook.Views.HomePage.xaml.g.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.UserBook.Droid PreferredExecutionTarget="Android.E9AZCY03N866" />
+  <MultiItemStartupConfigurations />
+</Properties>
