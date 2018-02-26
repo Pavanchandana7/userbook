@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="UserBook.HomePage">
+	<ContentPage.Content>
+		<AbsoluteLayout HorizontalOptions="FillAndExpand"
+    VerticalOptions="FillAndExpand">
+		 <StackLayout>
+        <Grid BackgroundColor="#545454" Padding="10, 10, 10, 10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="Enter no.of users to show" 
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                   HorizontalOptions="Center"
+                   TextColor="White" FontAttributes="Bold" FontSize="Medium" />
+            
+           
+            
+            <Entry x:Name="TotalUsersTextBox"
+                   Grid.Row="1" Grid.Column="0"
+                   VerticalOptions="Center"
+                   Margin="5,0"
+				   Keyboard="Numeric"
+                   BackgroundColor="DarkGray"
+                   TextColor="White" />
+            
+            <Button x:Name="getUsersBtn" Text="Get Users" 
+                    Grid.Row="1" Grid.Column="1"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BorderWidth="1"
+                    BorderColor="White"
+                    BackgroundColor="DarkGray"
+                    TextColor="White"
+                    Clicked="GetUsersBtn_Clicked" />
+        </Grid>
+        <ListView x:Name="UsersListView" HasUnevenRows="True" ItemSelected="Handle_ItemSelected">  
+    <ListView.ItemTemplate>  
+        <DataTemplate>  
+            <ViewCell>  
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="{Binding picture.thumbnail}" HeightRequest="50" WidthRequest="50"></Image>  
+								
+                    <StackLayout Orientation="Vertical">  
+                        <Label Text="{Binding name.first}" Font="18"></Label>  
+                        <Label Text="{Binding name.last}" TextColor="Gray"></Label> </StackLayout>  
+                	</StackLayout>  
+            </ViewCell>  
+        </DataTemplate>  
+    </ListView.ItemTemplate>  
+</ListView>  
+       
+    </StackLayout>
+		 <StackLayout AbsoluteLayout.LayoutFlags="All"
+                         AbsoluteLayout.LayoutBounds="0,0,1,1"
+                         x:Name="actIndicatorContainer">
+                <ActivityIndicator x:Name="actIndicator2"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Center" />
+            </StackLayout>
+			</AbsoluteLayout>
+	</ContentPage.Content>
+</ContentPage>

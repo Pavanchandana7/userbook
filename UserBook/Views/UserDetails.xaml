@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="UserBook.UserDetails">
+	<ContentPage.Content>
+		<ScrollView VerticalOptions="FillAndExpand">
+            <StackLayout Padding="10,10,10,10" Orientation="Vertical">
+				<Image Source="{Binding picture.medium}" 
+					HeightRequest="200" 
+					WidthRequest="200"
+					HorizontalOptions="Center"
+                    VerticalOptions="Center"></Image>  
+				<StackLayout Orientation="Horizontal" Padding="2,2,2,2" >	
+                <Label Text="Name:"  TextColor="Black" FontSize="18"/>
+                <Label Text="{Binding name.first}"  TextColor="Gray" Font="Bold,18"/>
+				<Label Text="{Binding name.last}"  TextColor="Gray" Font="Bold,18"/>
+                </StackLayout>
+				
+               <StackLayout Orientation="Horizontal" Padding="2,2,2,2" >	
+	                <Label Text="Gender:"  TextColor="Black" FontSize="18"/>
+	                <Label Text="{Binding gender}"  TextColor="Gray" Font="Bold,18"/>
+               </StackLayout>
+				
+				<StackLayout Orientation="Horizontal" Padding="2,2,2,2" >	
+	                <Label Text="Email:"  TextColor="Black" FontSize="18"/>
+	                <Label Text="{Binding email}"  TextColor="Gray" Font="Bold,18"/>
+                </StackLayout>
+				
+				<StackLayout Orientation="Horizontal" Padding="2,2,2,2" >	
+	                <Label Text="Date of Birth:"  TextColor="Black" FontSize="18"/>
+	                <Label Text="{Binding dob}"  TextColor="Gray" Font="Bold,18"/>
+                </StackLayout>
+				
+				<StackLayout Orientation="Horizontal" Padding="2,2,2,2" >	
+	                <Label Text="Registered:"  TextColor="Black" FontSize="18"/>
+	                <Label Text="{Binding registered}"  TextColor="Gray" Font="Bold,18"/>
+                </StackLayout>
+
+				<StackLayout Orientation="Horizontal" Padding="2,2,2,2" >	
+	                <Label Text="Phone:"  TextColor="Black" FontSize="18"/>
+	                <Label Text="{Binding phone}"  TextColor="Gray" Font="Bold,18"/>
+                </StackLayout>
+
+				<StackLayout Orientation="Horizontal" Padding="2,2,2,2">	
+	                <Label Text="Nat:"  TextColor="Black" FontSize="18"/>
+	                <Label Text="{Binding nat}"  TextColor="Gray" Font="Bold,18"/>
+                </StackLayout>
+				
+				<StackLayout Orientation="Horizontal" Padding="2,2,2,2">	
+	                <Label Text="Street:"  TextColor="Black" FontSize="18"/>
+	                <Label Text="{Binding location.street}"  TextColor="Gray" Font="Bold,18"/>
+                </StackLayout>
+				<StackLayout Orientation="Horizontal" Padding="2,2,2,2">	
+	                <Label Text="City:"  TextColor="Black" FontSize="18"/>
+	                <Label Text="{Binding location.city}"  TextColor="Gray" Font="Bold,18"/>
+                </StackLayout>
+				<StackLayout Orientation="Horizontal" Padding="2,2,2,2">	
+	                <Label Text="State:"  TextColor="Black" FontSize="18"/>
+	                <Label Text="{Binding location.state}"  TextColor="Gray" Font="Bold,18"/>
+                </StackLayout>
+				<StackLayout Orientation="Horizontal" Padding="2,2,2,2">	
+	                <Label Text="Postcode:"  TextColor="Black" FontSize="18"/>
+	                <Label Text="{Binding location.postcode}"  TextColor="Gray" Font="Bold,18"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+	</ContentPage.Content>
+</ContentPage>

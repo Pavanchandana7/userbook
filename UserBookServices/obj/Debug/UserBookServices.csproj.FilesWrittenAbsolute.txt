@@ -1,0 +1,9 @@
+/Users/RamJyo/Projects/UserBook/UserBookServices/obj/Debug/.NETPortable,Version=v4.5,Profile=Profile111.AssemblyAttribute.cs
+/Users/RamJyo/Projects/UserBook/UserBookServices/bin/Debug/UserBookServices.dll.mdb
+/Users/RamJyo/Projects/UserBook/UserBookServices/bin/Debug/UserBookServices.dll
+/Users/RamJyo/Projects/UserBook/UserBookServices/obj/Debug/UserBookServices.dll
+/Users/RamJyo/Projects/UserBook/UserBookServices/obj/Debug/UserBookServices.dll.mdb
+/Users/RamJyo/Projects/UserBook/UserBookServices/bin/Debug/Xamarin.Forms.Core.dll
+/Users/RamJyo/Projects/UserBook/UserBookServices/bin/Debug/Xamarin.Forms.Platform.dll
+/Users/RamJyo/Projects/UserBook/UserBookServices/bin/Debug/Xamarin.Forms.Xaml.dll
+/Users/RamJyo/Projects/UserBook/UserBookServices/bin/Debug/Newtonsoft.Json.dll
